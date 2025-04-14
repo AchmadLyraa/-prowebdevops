@@ -784,6 +784,9 @@ POST
 ```plaintext
 /payments/:payment_id
 ```
+```plaintext
+admin/payments/:payment_id
+```
 
 **Method**
 
@@ -847,6 +850,60 @@ PUT
 {
   "error": false,
   "message": "Payment verified successfully"
+}
+```
+
+### Get All Payment (Admin Only)
+
+**Endpoint**
+
+```plaintext
+/admin/payments
+```
+
+**Method**
+
+```plaintext
+GET
+```
+
+**Response**
+
+```json
+{
+  "error": false,
+  "message": "Payments generated successfully",
+  "data": {
+    "period": {
+      "from_date": "2023-06-01",
+      "to_date": "2023-06-30"
+    },
+    "total_revenue": 6750000,
+    "payment": [
+      {
+        "method_name": "bank_transfer",
+        "count": 30,
+        "amount": 4500000,
+        "payment_id": "payment-123abc",
+        "booking_id": "booking-123abc",
+        "status": "completed",
+        "transaction_id": "BT12345678",
+        "payment_date": "2023-06-10T12:30:00.000Z",
+        "notes": "Payment verified"
+      },
+      {
+        "method_name": "credit_card",
+        "count": 15,
+        "amount": 2250000,
+        "payment_id": "payment-123abc",
+        "booking_id": "booking-123abc",
+        "status": "completed",
+        "transaction_id": "BT12345678",
+        "payment_date": "2023-06-10T12:30:00.000Z",
+        "notes": "Payment verified"
+      }
+    ],
+  }
 }
 ```
 
@@ -944,6 +1001,9 @@ GET
 
 ```plaintext
 /loyalty/programs
+```
+```plaintext
+/admin/loyalty/programs
 ```
 
 **Method**
@@ -1319,14 +1379,17 @@ DELETE
 }
 ```
 
-## Reports
+## Reports (Admin & Super Admin)
 
-### Get Booking Reports (Admin Only)
+### Get Booking Reports 
 
 **Endpoint**
 
 ```plaintext
 /admin/reports/bookings
+```
+```plaintext
+/super-admin/reports/bookings
 ```
 
 **Method**
@@ -1383,12 +1446,15 @@ GET
 }
 ```
 
-### Get Revenue Reports (Admin Only)
+### Get Revenue Reports 
 
 **Endpoint**
 
 ```plaintext
 /admin/reports/revenue
+```
+```plaintext
+/super-admin/reports/revenue
 ```
 
 **Method**
@@ -1444,12 +1510,15 @@ GET
 }
 ```
 
-### Get Loyalty Program Reports (Admin Only)
+### Get Loyalty Program Reports 
 
 **Endpoint**
 
 ```plaintext
 /admin/reports/loyalty
+```
+```plaintext
+/super-admin/reports/loyalty
 ```
 
 **Method**
