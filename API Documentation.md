@@ -19,7 +19,7 @@ Most endpoints require authentication using JWT token.
 
 ### Register
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /auth/register
@@ -55,7 +55,7 @@ POST
 
 ### Login
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /auth/login
@@ -91,7 +91,7 @@ POST
 
 ### Get User Profile
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /users/profile
@@ -129,7 +129,7 @@ GET
 
 ### Update User Profile
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /users/profile
@@ -166,7 +166,7 @@ PUT
 
 ### Get All Fields
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /fields
@@ -199,13 +199,13 @@ GET
         "field_name": "Field A",
         "description": "Standard futsal field with artificial grass",
         "capacity": 10,
-        "hourly_rate": 150000,
+        "hoEndpointy_rate": 150000,
         "field_type": "indoor",
         "is_available": true,
         "images": [
           {
             "image_id": "img-123",
-            "image_url": "https://example.com/images/field-a.jpg",
+            "image_Endpoint": "https://example.com/images/field-a.jpg",
             "is_primary": true
           }
         ]
@@ -223,7 +223,7 @@ GET
 
 ### Get Field Detail
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /fields/:field_id
@@ -246,18 +246,18 @@ GET
     "field_name": "Field A",
     "description": "Standard futsal field with artificial grass",
     "capacity": 10,
-    "hourly_rate": 150000,
+    "hoEndpointy_rate": 150000,
     "field_type": "indoor",
     "is_available": true,
     "images": [
       {
         "image_id": "img-123",
-        "image_url": "https://example.com/images/field-a.jpg",
+        "image_Endpoint": "https://example.com/images/field-a.jpg",
         "is_primary": true
       },
       {
         "image_id": "img-124",
-        "image_url": "https://example.com/images/field-a-2.jpg",
+        "image_Endpoint": "https://example.com/images/field-a-2.jpg",
         "is_primary": false
       }
     ],
@@ -269,7 +269,7 @@ GET
 
 ### Add New Field (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /fields
@@ -292,7 +292,7 @@ POST
 - `field_name` as string
 - `description` as string, optional
 - `capacity` as integer
-- `hourly_rate` as decimal
+- `hoEndpointy_rate` as decimal
 - `field_type` as string
 - `images` as files, optional, multiple files allowed
 
@@ -311,7 +311,7 @@ POST
 
 ### Update Field (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /fields/:field_id
@@ -334,7 +334,7 @@ PUT
 - `field_name` as string, optional
 - `description` as string, optional
 - `capacity` as integer, optional
-- `hourly_rate` as decimal, optional
+- `hoEndpointy_rate` as decimal, optional
 - `field_type` as string, optional
 - `is_available` as boolean, optional
 - `images` as files, optional, multiple files allowed
@@ -351,7 +351,7 @@ PUT
 
 ### Delete Field (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /fields/:field_id
@@ -381,7 +381,7 @@ DELETE
 
 ### Check Field Availability
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /fields/:field_id/availability
@@ -430,7 +430,7 @@ GET
 
 ### Create Booking
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /bookings
@@ -483,7 +483,7 @@ POST
 
 ### Get User Bookings
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /bookings
@@ -543,7 +543,7 @@ GET
 
 ### Get Booking Detail
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /bookings/:booking_id
@@ -576,7 +576,7 @@ GET
     "field": {
       "field_id": "field-123abc",
       "field_name": "Field A",
-      "image_url": "https://example.com/images/field-a.jpg"
+      "image_Endpoint": "https://example.com/images/field-a.jpg"
     },
     "booking_date": "2023-06-15",
     "start_time": "10:00:00",
@@ -600,7 +600,7 @@ GET
 
 ### Cancel Booking
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /bookings/:booking_id/cancel
@@ -633,7 +633,7 @@ PUT
 
 ### Get All Bookings (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /admin/bookings
@@ -700,7 +700,7 @@ GET
 
 ### Update Booking Status (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /admin/bookings/:booking_id/status
@@ -737,7 +737,7 @@ PUT
 
 ### Create Payment
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /payments
@@ -779,7 +779,7 @@ POST
 
 ### Get Payment Detail
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /payments/:payment_id
@@ -817,7 +817,7 @@ GET
 
 ### Verify Payment (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /admin/payments/:payment_id/verify
@@ -852,7 +852,7 @@ PUT
 
 ### Get Payment Methods
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /payment-methods
@@ -895,7 +895,7 @@ GET
 
 ### Get User Points
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /loyalty/points
@@ -940,7 +940,7 @@ GET
 
 ### Get Available Loyalty Programs
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /loyalty/programs
@@ -981,7 +981,7 @@ GET
 
 ### Redeem Points
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /loyalty/redeem
@@ -1023,7 +1023,7 @@ POST
 
 ### Get Redemption History
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /loyalty/redemptions
@@ -1062,7 +1062,7 @@ GET
 
 ### Create Loyalty Program (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /admin/loyalty/programs
@@ -1105,7 +1105,7 @@ POST
 
 ### Update Loyalty Program (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /admin/loyalty/programs/:program_id
@@ -1146,7 +1146,7 @@ PUT
 
 ### Delete Loyalty Program (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /admin/loyalty/programs/:program_id
@@ -1176,7 +1176,7 @@ DELETE
 
 ### Create Admin Account
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /super-admin/admins
@@ -1218,7 +1218,7 @@ POST
 
 ### Get All Admins
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /super-admin/admins
@@ -1256,7 +1256,7 @@ GET
 
 ### Update Admin Account
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /super-admin/admins/:user_id
@@ -1293,7 +1293,7 @@ PUT
 
 ### Delete Admin Account
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /super-admin/admins/:user_id
@@ -1323,7 +1323,7 @@ DELETE
 
 ### Get Booking Reports (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /admin/reports/bookings
@@ -1385,7 +1385,7 @@ GET
 
 ### Get Revenue Reports (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /admin/reports/revenue
@@ -1446,7 +1446,7 @@ GET
 
 ### Get Loyalty Program Reports (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /admin/reports/loyalty
@@ -1506,7 +1506,7 @@ GET
 
 ### Get System Statistics (Super Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /super-admin/statistics
@@ -1577,7 +1577,7 @@ GET
 
 ### Subscribe to Push Notifications
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /notifications/subscribe
@@ -1621,7 +1621,7 @@ POST
 
 ### Unsubscribe from Push Notifications
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /notifications/unsubscribe
@@ -1655,7 +1655,7 @@ DELETE
 
 ### Get User Notifications
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /notifications
@@ -1709,7 +1709,7 @@ GET
 
 ### Mark Notification as Read
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /notifications/:notification_id/read
@@ -1737,7 +1737,7 @@ PUT
 
 ### Send Notification (Admin Only)
 
-**URL**
+**Endpoint**
 
 ```plaintext
 /admin/notifications
@@ -1869,7 +1869,7 @@ When rate limit is exceeded, the API will respond with HTTP status code 429 (Too
 
 ## Versioning
 
-The current API version is v1. The version is included in the URL path.
+The current API version is v1. The version is included in the Endpoint path.
 
 ## Pagination
 
