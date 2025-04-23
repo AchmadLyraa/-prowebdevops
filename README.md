@@ -3,6 +3,7 @@
 Repository ini digunakan untuk menampung semua kebutuhan operasional dalam pengembangan website BALLS (Borneo Anfield Loyalty System).
 
 ## GitHub Repository
+- **Link Report**: https://github.com/wounderfvl/ballsproweb-report
 - **Link Backend**: https://github.com/x3naline/balls-backdoor
 - **Link Frontend**: https://github.com/wounderfvl/balls-frontdoor
 - **Link Devops**: https://github.com/AchmadLyraa/-prowebdevops
