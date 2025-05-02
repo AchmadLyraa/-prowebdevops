@@ -735,6 +735,7 @@ PUT
 }
 ```
 
+# Checkpoint - 2`
 ## Payment Management
 
 ### Create Payment
