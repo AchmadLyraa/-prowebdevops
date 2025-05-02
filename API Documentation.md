@@ -162,7 +162,7 @@ PUT
 }
 ```
 
-# Checkpoint - 1`
+# Checkpoint - 1` Register, Login, Profil CRUD
 ------------------------------------------------------------------------------------------------------------------------------------
 ## Field Management
 
@@ -735,7 +735,7 @@ PUT
 }
 ```
 
-# Checkpoint - 2`
+# Checkpoint - 2`  -  Booking CRUD, Fields CRUD, and Integration with User
 ## Payment Management
 
 ### Create Payment
@@ -950,7 +950,7 @@ GET
   ]
 }
 ```
-
+# Checkpoint - 3` - Payment
 ## Loyalty Program Management
 
 ### Get User Points
@@ -1235,6 +1235,7 @@ DELETE
 }
 ```
 
+# Checkpoint - 4` - Loyalty, Poin Redemption
 ## Admin Management (Super Admin Only)
 
 ### Create Admin Account
